@@ -7,7 +7,7 @@
 #  http://www.boost.org/LICENSE_1_0.txt
 
 import testing ;
-import ../../config/checks/config : requires ;
+import config : requires ;
 project 
     : requirements 
         [ requires cxx14_constexpr ]
@@ -65,7 +65,7 @@ run test_performance.cpp # sources
     :  <variant>debug:<build>no # requirements
     ;
 run test_range.cpp ;
-run test_rational.cpp ;
+run test_rational.cpp : : : <source>/boost/rational//boost_rational ;
 run test_right_shift_automatic.cpp ;
 run test_right_shift_native.cpp ;
 run test_safe_compare.cpp ;
