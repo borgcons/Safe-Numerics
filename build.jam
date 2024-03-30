@@ -7,12 +7,12 @@ import project ;
 
 project /boost/safe_numerics
     : common-requirements
-        <source>/boost/concept_check//boost_concept_check
-        <source>/boost/config//boost_config
-        <source>/boost/core//boost_core
-        <source>/boost/integer//boost_integer
-        <source>/boost/logic//boost_logic
-        <source>/boost/mp11//boost_mp11
+        <library>/boost/concept_check//boost_concept_check
+        <library>/boost/config//boost_config
+        <library>/boost/core//boost_core
+        <library>/boost/integer//boost_integer
+        <library>/boost/logic//boost_logic
+        <library>/boost/mp11//boost_mp11
         <include>include
     ;
 
