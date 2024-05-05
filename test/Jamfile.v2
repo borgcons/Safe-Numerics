@@ -7,9 +7,10 @@
 #  http://www.boost.org/LICENSE_1_0.txt
 
 import testing ;
+import-search /boost/config/checks ;
 import config : requires ;
-project 
-    : requirements 
+project
+    : requirements
         [ requires cxx14_constexpr ]
         # toolset optimizations
         <c++-template-depth>256
