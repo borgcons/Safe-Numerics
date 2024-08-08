@@ -11,6 +11,7 @@ import-search /boost/config/checks ;
 import config : requires ;
 project
     : requirements
+        <library>/boost/safe_numerics//boost_safe_numerics
         [ requires cxx14_constexpr ]
         # toolset optimizations
         <c++-template-depth>256

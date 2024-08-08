@@ -8,6 +8,8 @@
 
 import testing ;
 
+project : requirements <library>/boost/safe_numerics//boost_safe_numerics ;
+
 run example1.cpp ;
 run example2.cpp ;
 run example3.cpp ;
